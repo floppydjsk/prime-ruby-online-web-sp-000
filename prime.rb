@@ -1,5 +1,4 @@
-class Fixnum
-  def prime?(self)
-    ('1' * self) !~ /^1?$|^(11+?)\1+$/
-  end
-end
+def isPrime?(num)
+       (2..Math.sqrt(num)).each { |i| return false if num % i == 0}
+       true
+   end
