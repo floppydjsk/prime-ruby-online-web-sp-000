@@ -1,5 +1,5 @@
 class Fixnum
-  def prime?
+  def prime?(self)
     ('1' * self) !~ /^1?$|^(11+?)\1+$/
   end
 end
